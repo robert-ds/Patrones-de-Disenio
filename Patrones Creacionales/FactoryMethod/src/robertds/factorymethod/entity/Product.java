@@ -27,7 +27,7 @@ public class Product {
     this.idProduct = idProduct;
   }
 
-  public String getProducName(){
+  public String getProductName(){
     return productName;
   }
 
