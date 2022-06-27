@@ -27,7 +27,7 @@ public class ProductDAO {
     List<Product> productList = new ArrayList<>();
 
     try{
-      PreparedStatement statement = connection.prepareStatement("SELECT idProductos,productName,productPrice FROM Productos");
+      PreparedStatement statement = connection.prepareStatement("SELECT idProductos,productName,productPrice FROM productos");
       ResultSet results = statement.executeQuery();
 
       while(results.next()){
