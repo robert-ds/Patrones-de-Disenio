@@ -12,7 +12,7 @@ import abstractfactory.util.PropertiesUtil;
 
 public class ServiceStackAbstractFactory {
 
-  public ServiceStackAbstractFactory(){
+  public ServiceStackAbstractFactory(){}
 
     public static IServiceStackAbstractFactory createServiceFactory(){
       Properties props = PropertiesUtil.loadProperty("META_INF/AbstactFactoryConfig.properties");
@@ -27,6 +27,6 @@ public class ServiceStackAbstractFactory {
 
     }
 
-  }
+
 
 }
