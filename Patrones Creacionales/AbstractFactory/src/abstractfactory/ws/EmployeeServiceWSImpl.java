@@ -6,5 +6,5 @@ package abstractfactory.ws;
  * Date: 28/6/22
  * Time: 2:30 p. m.
  */
-public class EmployeeSeviceWSImpl {
+public class EmployeeServiceWSImpl {
 }
