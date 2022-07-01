@@ -45,14 +45,6 @@ public class ConfigurationSingleton {
 
   // Getters and Setters
 
-  public static ConfigurationSingleton getSingleton() {
-    return singleton;
-  }
-
-  public static void setSingleton(ConfigurationSingleton singleton) {
-    ConfigurationSingleton.singleton = singleton;
-  }
-
   public String getAppName() {
     return appName;
   }
