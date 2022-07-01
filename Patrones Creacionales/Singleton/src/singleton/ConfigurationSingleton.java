@@ -60,4 +60,12 @@ public class ConfigurationSingleton {
   public void setAppVersion(String appVersion) {
     this.appVersion = appVersion;
   }
+
+  @Override
+  public String toString() {
+    return "ConfigurationSingleton{" +
+        "appName='" + appName + '\'' +
+        ", appVersion='" + appVersion + '\'' +
+        '}';
+  }
 }
