@@ -35,7 +35,7 @@ public class ConfigurationSingleton {
     }
   }
 
-  public static ConfigurationSingleon getInstance(){
+  public static ConfigurationSingleton getInstance(){
     if(singleton == null){
       createInstance();
     }
