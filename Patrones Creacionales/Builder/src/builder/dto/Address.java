@@ -56,4 +56,14 @@ public class Address {
   public void setCp(String cp) {
     this.cp = cp;
   }
+
+  @Override
+  public String toString() {
+    return "Address{" +
+        "address='" + address + '\'' +
+        ", city='" + city + '\'' +
+        ", country='" + country + '\'' +
+        ", cp='" + cp + '\'' +
+        '}';
+  }
 }

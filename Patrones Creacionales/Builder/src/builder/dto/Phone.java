@@ -46,4 +46,14 @@ public class Phone {
   public void setPhoneType(String phoneType) {
     this.phoneType = phoneType;
   }
+
+  @Override
+  public String toString() {
+    return "Phone{" +
+        "phoneNumber='" + phoneNumber + '\'' +
+        ", ext='" + ext + '\'' +
+        ", phoneType='" + phoneType + '\'' +
+        '}';
+  }
+
 }

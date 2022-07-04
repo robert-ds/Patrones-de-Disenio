@@ -25,8 +25,7 @@ public class BuilderMain {
         .build();
 
     System.out.println(emp);
-
-
+    
   }
 
 }
