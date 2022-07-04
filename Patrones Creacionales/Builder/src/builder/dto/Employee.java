@@ -87,6 +87,18 @@ public class Employee {
     this.contacts = contacts;
   }
 
+  @Override
+  public String toString() {
+    return "Employee{" +
+        "name='" + name + '\'' +
+        ", age=" + age +
+        ", gender='" + gender + '\'' +
+        ", adress=" + adress +
+        ", phones=" + phones +
+        ", contacts=" + contacts +
+        '}';
+  }
+
   public static class EmployeeBuilder implements IBuilder<Employee>{
 
     private String name;
