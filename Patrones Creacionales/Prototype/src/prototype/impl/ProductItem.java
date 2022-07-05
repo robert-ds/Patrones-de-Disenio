@@ -31,7 +31,7 @@ public class ProductItem implements IPrototype<ProductItem> {
   }
 
   public double getPrice() {
-    return price;
+    return this.price;
   }
 
   public void setPrice(double price) {
@@ -55,5 +55,5 @@ public class ProductItem implements IPrototype<ProductItem> {
         ", price=" + price +
         '}';
   }
-  
+
 }
