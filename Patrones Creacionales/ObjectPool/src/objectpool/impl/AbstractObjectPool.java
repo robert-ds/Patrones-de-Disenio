@@ -9,10 +9,11 @@ import java.util.UUID;
 
 /**
  * Created with IntelliJ IDEA
- * Created By Kinsey
+ * Created By Robert Vásquez
  * Date: 6/7/22
  * Time: 2:30 p. m.
  */
+
 public class AbstractObjectPool<T extends IPooledObject> implements IObjectPool<T> {
 
   private final int minInstances;
@@ -99,7 +100,7 @@ public class AbstractObjectPool<T extends IPooledObject> implements IObjectPool<
           returnObject.used = true;
           useStack.push(returnObject);
           System.out.println("Provisioning 3 Object > " + returnObject.uuid.toString());
-          return Object.pooledObject;
+          return returnObject.pooledObject;
         }
       }
         if(returnObject == null || returnObject.used){
