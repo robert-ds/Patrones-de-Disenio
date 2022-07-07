@@ -8,4 +8,17 @@ package adapter.impl;
  */
 
 public class BankCreditResponse {
+
+  public boolean approved;
+
+  // Getters and Setters
+
+  public boolean isApproved(){
+    return approved;
+  }
+
+  public void setApproved(boolean approved){
+    this.approved = approved;
+  }
+
 }
