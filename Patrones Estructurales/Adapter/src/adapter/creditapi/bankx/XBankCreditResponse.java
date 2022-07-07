@@ -8,4 +8,21 @@ package adapter.creditapi.bankx;
  */
 
 public class XBankCreditResponse {
+
+  public class XBankCreditResonse{
+
+    public boolean aproval;
+
+    // Getters and Setters
+
+    public boolean isAproval(){
+      return aproval;
+    }
+
+    public void setAproval(boolean aproval){
+      this.aproval = aproval;
+    }
+
+  }
+
 }
