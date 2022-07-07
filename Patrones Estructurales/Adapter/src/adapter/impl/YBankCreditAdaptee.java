@@ -5,6 +5,8 @@ import adapter.creditapi.banky.YBankCreditApproveResult;
 import adapter.creditapi.banky.YBankCreditSender;
 import adapter.creditapi.banky.YBankCreditSenderListener;
 
+import java.util.Objects;
+
 /**
  * Created with IntelliJ IDEA
  * Created By Robert Vásquez
@@ -37,7 +39,7 @@ public class YBankCreditAdaptee implements IBankAdapter, YBankCreditSenderListen
     }while(yresponse == null);
 
     BankCreditResponse response = new BankCreditResponse();
-    response.setApproved(yresponse.getApproved() == "Y" ? true : false);
+    response.setApproved(Objects.equals(yresponse.getApproved(), "Y"));
     return response;
 
   }

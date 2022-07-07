@@ -17,7 +17,7 @@ public class YBankCreditApproveResult {
     return approved;
   }
 
-  public void setApproved(){
+  public void setApproved(String approved){
     this.approved = approved;
   }
 

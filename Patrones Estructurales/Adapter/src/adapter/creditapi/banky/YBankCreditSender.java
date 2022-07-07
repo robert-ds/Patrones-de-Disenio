@@ -15,7 +15,7 @@ public class YBankCreditSender {
 
       @Override
       public void run() {
-        System.out.println("YBank Receiv your request in a moment you will have the answer, be patient please");
+        System.out.println("YBank Received your request in a moment you will have the answer, be patient please");
         YBankCreditApproveResult response = new YBankCreditApproveResult();
 
         if(request.getCredit()  <= 1500){
