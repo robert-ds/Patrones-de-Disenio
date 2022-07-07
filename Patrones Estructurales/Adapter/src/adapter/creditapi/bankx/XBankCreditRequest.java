@@ -8,4 +8,25 @@ package adapter.creditapi.bankx;
  */
 
 public class XBankCreditRequest {
+
+  private String customerName;
+  private double requestAmount;
+
+  // Getters and Setters
+
+  public String getCustomerName(){
+    return customerName;
+  }
+
+  public void setCustomerName(String customerName){
+    this.customerName = customerName;
+  }
+
+  public double getRequestAmount() {
+    return requestAmount;
+  }
+
+  public void setRequestAmount(double requestAmount) {
+    this.requestAmount = requestAmount;
+  }
 }
