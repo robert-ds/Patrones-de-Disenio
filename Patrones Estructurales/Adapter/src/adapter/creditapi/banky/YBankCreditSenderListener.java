@@ -7,5 +7,7 @@ package adapter.creditapi.banky;
  * Time: 4:27 p. m.
  */
 
-public class YBankCreditSenderListener {
+public interface YBankCreditSenderListener {
+  public void notifyCreditResult(YBankCreditApproveResult result);
+  
 }
