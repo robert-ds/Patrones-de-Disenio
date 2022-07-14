@@ -8,5 +8,5 @@ package bridge.impl;
  */
 
 public interface IMessageEncrypt {
-  
+
 }
