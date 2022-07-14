@@ -7,6 +7,11 @@ package bridge.encript;
  * Time: 3:26 p. m.
  */
 
-public class NoEncryptAlgorithm {
+public class NoEncryptAlgorithm implements IEncryptAlgorithm {
 
+
+  @Override
+  public String encrypt(String message, String password) throws Exception {
+    return message;
+  }
 }
