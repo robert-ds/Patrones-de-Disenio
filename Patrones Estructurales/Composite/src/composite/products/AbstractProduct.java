@@ -28,7 +28,7 @@ public abstract class AbstractProduct {
     this.name = name;
   }
 
-  public double price(){
+  public double getPrice(){
     return this.price;
   }
 
