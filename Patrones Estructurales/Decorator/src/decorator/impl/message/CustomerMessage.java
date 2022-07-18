@@ -13,6 +13,12 @@ public class CustomerMessage implements IMessage {
   private String email;
   private String telephone;
 
+  public CustomerMessage(String name, String password, String telephone){
+    this.name = name;
+    this.email = email;
+    this.telephone = telephone;
+  }
+
   @Override
   public IMessage processMessage() {
     return this;
