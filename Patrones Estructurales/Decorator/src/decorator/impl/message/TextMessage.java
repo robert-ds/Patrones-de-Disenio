@@ -12,7 +12,7 @@ public class TextMessage implements IMessage {
   private String content;
 
   // Construct
-  public TextMessage(){}
+  public TextMessage(String s){}
 
   @Override
   public IMessage processMessage() {
