@@ -7,6 +7,6 @@ package facade.impl;
  * Time: 2:31 p. m.
  */
 
-public class PaymentResquest {
+public class PaymentRequest {
 
 }

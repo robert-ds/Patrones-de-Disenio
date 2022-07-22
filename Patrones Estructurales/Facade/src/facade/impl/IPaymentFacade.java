@@ -8,5 +8,5 @@ package facade.impl;
  */
 
 public interface IPaymentFacade {
-
+  public PaymentResponse pay(PaymentRequest paymentResquest)throws GeneralPaymentError;
 }

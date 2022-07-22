@@ -7,6 +7,6 @@ package facade.impl;
  * Time: 2:28 p. m.
  */
 
-public class GeneralPaymentError {
+public class GeneralPaymentError extends Exception {
 
 }
