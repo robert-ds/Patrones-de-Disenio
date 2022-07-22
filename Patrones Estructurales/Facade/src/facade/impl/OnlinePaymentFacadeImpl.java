@@ -26,7 +26,7 @@ public class OnlinePaymentFacadeImpl implements IPaymentFacade{
   private static final EmailSystem emailSenderSystem = new EmailSystem();
 
   @Override
-  public PaymentResponse pay(PaymentRequest paymentRequest) throws GeneralPaymentError {
+  public PaymentResponse pay(PaymentRequest request) throws GeneralPaymentError {
 
     Customer customer = crmSystem.findCustomer(request.getCustomerId());
 
@@ -51,7 +51,7 @@ public class OnlinePaymentFacadeImpl implements IPaymentFacade{
     BillingPayRequest billingRequest = new BillingPayRequest(
         request.getCustomerId(),request.getAmmount()
     );
-    double newBlalance = billingSyste.pay(billingRequest);
+    double newBalance = billingSyste.pay(billingRequest);
 
 
     // El cliente se reactiva si el nuevo saldo es menor de 51$
