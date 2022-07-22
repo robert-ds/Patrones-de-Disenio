@@ -43,5 +43,5 @@ public class Card {
   public void setCardType(String cardType) {
     this.cardType = cardType;
   }
-  
+
 }
