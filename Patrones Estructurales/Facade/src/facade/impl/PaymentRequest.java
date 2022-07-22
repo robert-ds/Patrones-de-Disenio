@@ -66,5 +66,5 @@ public class PaymentRequest {
   public void setCardSecureNum(String cardSecureNum) {
     this.cardSecureNum = cardSecureNum;
   }
-  
+
 }
