@@ -1,5 +1,8 @@
 package facade.subsystems.crm;
 
+import facade.util.Customer;
+import facade.util.OnMemoryDataBase;
+
 /**
  * Created with IntelliJ IDEA
  * Created By Robert Vásquez
@@ -8,5 +11,9 @@ package facade.subsystems.crm;
  */
 
 public class CRMSystem {
+
+  public Customer findCustomer(Long customerId){
+    return OnMemoryDataBase.findCustomerById(customerId);
+  }
 
 }
