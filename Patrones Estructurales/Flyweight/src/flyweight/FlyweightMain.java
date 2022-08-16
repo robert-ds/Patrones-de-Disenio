@@ -16,7 +16,7 @@ import java.util.Random;
 public class FlyweightMain {
 
   private static final String[] songNames = new String[1000];
-  private static final String[] playListNames = new String[174];
+  private static final String[] playListNames = new String[176];
   private static final List<PlayList> playLists = new ArrayList<>();
 
   public static void main(String[] args){
@@ -24,14 +24,14 @@ public class FlyweightMain {
 
     Runtime runtime = Runtime.getRuntime();
     System.out.println("MaxMemory > " + (runtime.maxMemory()/1000000));
-    PlayItemFactory.enableFlyweight = false;
+    PlayItemFactory.enableFlyweight = true;
     initArrays();
     createRandonPlayList();
 
     System.out.println("Total playlist > " + playLists.size());
 
     long memoryUsed = runtime.totalMemory() - runtime.freeMemory();
-    System.out.println("Memory Used => " + (memoryUsed)/1000000);
+    System.out.println("Memory Used => " + (memoryUsed / 1000000));
 
   }
 
@@ -48,6 +48,8 @@ public class FlyweightMain {
         playList.addPlayItem(songNames[song]);
       }
 
+      playLists.add(playList);
+
       if(c != 0 && (c + 1) % (playListNames.length / 10) == 0){
 
         p += 10;
@@ -59,8 +61,8 @@ public class FlyweightMain {
     }
 
   }
-  
-  public static void initArrays(){
+
+  private static void initArrays(){
 
     for(int c = 0; c < songNames.length; c++){
       songNames[c] = "Song " + (c + 1);
