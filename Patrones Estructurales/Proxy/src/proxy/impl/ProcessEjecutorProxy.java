@@ -17,7 +17,7 @@ public class ProcessEjecutorProxy implements IProcessEjecutor {
 
     SecurityService securityService = new SecurityService();
     if(!securityService.authorization(user, password)){
-      throw new Exception("El usuario " + user + "No tiene privilegios para ejecutar el proceso");
+      throw new Exception("El usuario " + user + " No tiene privilegios para ejecutar el proceso");
     }
 
     DefaultProcessEjecutor ejecutorProcess = new DefaultProcessEjecutor();

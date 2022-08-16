@@ -13,7 +13,7 @@ import java.util.Date;
 public class AuditService {
   public void auditServiceUsed(String user, String service){
     SimpleDateFormat formater = new SimpleDateFormat("dd/MM/YYYY");
-    System.out.println(user + "utilizo el servicio > " + service + ", a las " + formater.format(new Date()));
+    System.out.println(user + " utilizo el servicio > " + service + ", el dia " + formater.format(new Date()));
   }
 
 }
