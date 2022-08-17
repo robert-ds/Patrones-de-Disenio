@@ -7,5 +7,7 @@ package Iterator.impl;
  * Time: 1:50 p. m.
  */
 
-public interface IIterator {
+public interface IIterator<T> {
+  public boolean hasNext();
+  public T next();
 }
