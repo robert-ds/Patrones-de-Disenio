@@ -2,11 +2,10 @@ package Iterator.impl;
 
 /**
  * Created with IntelliJ IDEA
- * Created By Robert Vásquez
+ * Created By Kinsey
  * Date: 17/8/22
- * Time: 1:49 p. m.
+ * Time: 1:55 p. m.
  */
-
-public class IContainer {
-
+public interface IContainer<T> {
+  public IIterator<T> createIterator();
 }

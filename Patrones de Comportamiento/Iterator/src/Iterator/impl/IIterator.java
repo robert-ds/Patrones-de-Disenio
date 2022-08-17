@@ -8,5 +8,4 @@ package Iterator.impl;
  */
 
 public interface IIterator {
-
 }
