@@ -26,7 +26,7 @@ public class MemoryCommand extends BaseCommand{
 
     String salida = "Head: " + heap + "\nMax Heap: " + heapMx + "\nFree heap: " + heapFree;
     write(out, salida);
-    
+
     return salida;
   }
 }
