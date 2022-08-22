@@ -48,7 +48,7 @@ public class CommandManager {
     }else{
       return (ICommand) new NotFoundCommand();
     }
-    
+
   }
 
   public void registCommand(String commandName, Class<? extends ICommand> command){

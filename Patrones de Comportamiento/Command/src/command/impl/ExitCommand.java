@@ -1,5 +1,9 @@
 package command.impl;
 
+import command.ICommand;
+
+import java.io.OutputStream;
+
 /**
  * Created with IntelliJ IDEA
  * Created By Robert Vásquez
@@ -7,5 +11,18 @@ package command.impl;
  * Time: 3:38 p. m.
  */
 
-public class ExitCommand {
+public class ExitCommand implements ICommand {
+  
+  public static final String COMMAND_NAME = "exit";
+
+
+  @Override
+  public String getCommandName() {
+    return COMMAND_NAME;
+  }
+
+  @Override
+  public void execute(String[] args, OutputStream out) {
+    System.exit(0);
+  }
 }
