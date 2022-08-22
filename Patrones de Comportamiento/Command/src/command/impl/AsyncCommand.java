@@ -20,6 +20,6 @@ public abstract class AsyncCommand extends BaseCommand {
     return null;
   }
 
-  public abstract void executeOnBackground(String[] args, OutputStream out);
+  public abstract String executeOnBackground(String[] args, OutputStream out);
 
 }
