@@ -22,7 +22,8 @@ public class ExitCommand implements ICommand {
   }
 
   @Override
-  public void execute(String[] args, OutputStream out) {
+  public String execute(String[] args, OutputStream out) {
     System.exit(0);
+    return null;
   }
 }

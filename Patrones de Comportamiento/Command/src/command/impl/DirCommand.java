@@ -20,7 +20,7 @@ public class DirCommand extends BaseCommand{
   }
 
   @Override
-  public void execute(String[] args, OutputStream out) {
+  public String execute(String[] args, OutputStream out) {
 
     if(args == null || args.length < 2){
       write(out, COMMAND_NAME + " Argumentos insuficientes");
@@ -35,6 +35,7 @@ public class DirCommand extends BaseCommand{
       write(out, "Se esperaba una operación correcta -d | -n");
     }
 
+    return operation;
   }
 
   private String deleteDir(String url){
@@ -74,5 +75,5 @@ public class DirCommand extends BaseCommand{
     }
 
   }
-  
+
 }
