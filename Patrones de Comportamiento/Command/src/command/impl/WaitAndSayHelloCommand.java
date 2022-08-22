@@ -7,5 +7,5 @@ package command.impl;
  * Time: 3:40 p. m.
  */
 
-public class WaitAndSayHello {
+public class WaitAndSayHelloCommand {
 }
