@@ -1,5 +1,7 @@
 package command;
 
+import java.io.OutputStream;
+
 /**
  * Created with IntelliJ IDEA
  * Created By Robert Vásquez
@@ -8,4 +10,6 @@ package command;
  */
 
 public interface ICommand {
+  public String getCommandName();
+  public void execute(String[] args, OutputStream out);
 }
