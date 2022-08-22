@@ -1,5 +1,7 @@
 package command.impl;
 
+import java.io.OutputStream;
+
 /**
  * Created with IntelliJ IDEA
  * Created By Robert Vásquez
@@ -7,5 +9,19 @@ package command.impl;
  * Time: 3:37 p. m.
  */
 
-public class ErrorCommand {
+public class ErrorCommand extends BaseCommand{
+
+  private static final String COMMAND_NAME = "ERROR";
+
+  @Override
+  public String getCommandName() {
+    return COMMAND_NAME;
+  }
+
+  @Override
+  public String execute(String[] args, OutputStream out) {
+    String message = "Error al invocar el comando";
+    write(out, message);
+    return message;
+  }
 }
