@@ -1,5 +1,8 @@
 package command.impl;
 
+import command.ICommand;
+import java.io.OutputStream;
+
 /**
  * Created with IntelliJ IDEA
  * Created By Robert Vásquez
@@ -7,5 +10,22 @@ package command.impl;
  * Time: 3:34 p. m.
  */
 
-public class BaseCommand {
+public abstract class BaseCommand implements ICommand {
+
+
+  @Override
+  public abstract String getCommandName();
+
+  @Override
+  public abstract void execute(String[] args, OutputStream out);
+
+  public void write(OutputStream out, String message){
+    try{
+      out.write(message.getBytes());
+      out.flush();
+    }catch(Exception e){
+      e.printStackTrace();
+    }
+  }
+
 }
