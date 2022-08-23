@@ -10,5 +10,5 @@ package observer.impl;
 public interface IObservable {
   public void addObsever(IObserver observer);
   public void removeObserver(IObserver observer);
-  public void notifyAllObserver(String command, Object source);
+  public void notifyAllObservers(String command, Object source);
 }

@@ -34,6 +34,7 @@ public class ConfigurationManager extends AbstractObservable {
 
   public void setDefaultDateFormat(SimpleDateFormat defaultDateFormat){
     this.defaultDateFormat = defaultDateFormat;
+    notifyAllObservers("defaultDateFormat",this);
   }
 
   public NumberFormat getMoneyFormat(){
