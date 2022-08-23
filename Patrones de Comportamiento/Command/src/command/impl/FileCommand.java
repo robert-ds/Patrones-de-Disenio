@@ -14,7 +14,8 @@ import java.util.Arrays;
 
 public class FileCommand extends BaseCommand{
 
-  public static final String COMMAND_NAME = "file";
+  public static final String COMMAN_NAME = "file";
+
   private static final String WRITE_APPEND = "-WA";
   private static final String WRITE_OVERRIDE = "-WO";
   private static final String WRITE_NEW = "-WN";
@@ -23,7 +24,7 @@ public class FileCommand extends BaseCommand{
 
   @Override
   public String getCommandName() {
-    return COMMAND_NAME;
+    return COMMAN_NAME;
   }
 
   @Override

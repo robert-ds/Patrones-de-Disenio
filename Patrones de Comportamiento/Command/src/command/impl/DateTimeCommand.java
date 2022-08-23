@@ -13,11 +13,11 @@ import java.util.Date;
 
 public class DateTimeCommand extends BaseCommand{
 
-  public static final String COMMAND_NAME = "date";
+  public static final String COMMAN_NAME = "date";
 
   @Override
   public String getCommandName() {
-    return COMMAND_NAME;
+    return COMMAN_NAME;
   }
 
   @Override

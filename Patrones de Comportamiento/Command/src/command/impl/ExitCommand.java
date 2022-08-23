@@ -13,12 +13,12 @@ import java.io.OutputStream;
 
 public class ExitCommand implements ICommand {
   
-  public static final String COMMAND_NAME = "exit";
+  public static final String COMMAN_NAME = "exit";
 
 
   @Override
   public String getCommandName() {
-    return COMMAND_NAME;
+    return COMMAN_NAME;
   }
 
   @Override

@@ -11,11 +11,11 @@ import java.io.OutputStream;
 
 public class NotFoundCommand extends BaseCommand{
 
-  private static final String COMMAND_NAME = "NOT FOUND";
+  private static final String COMMAN_NAME = "NOT FOUND";
 
   @Override
   public String getCommandName() {
-    return COMMAND_NAME;
+    return COMMAN_NAME;
   }
 
   @Override

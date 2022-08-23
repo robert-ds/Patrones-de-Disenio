@@ -23,6 +23,7 @@ public class EchoCommand  extends BaseCommand{
   public String execute(String[] args, OutputStream out) {
     String message = getCommandName() + "" + Arrays.toString(args);
     write(out, message);
+    return message;
   }
 
 }

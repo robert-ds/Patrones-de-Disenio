@@ -11,11 +11,11 @@ import java.io.OutputStream;
 
 public class MemoryCommand extends BaseCommand{
 
-  public static final String COMMAND_NAME = "memory";
+  public static final String COMMAN_NAME = "memory";
 
   @Override
   public String getCommandName() {
-    return COMMAND_NAME;
+    return COMMAN_NAME;
   }
 
   @Override

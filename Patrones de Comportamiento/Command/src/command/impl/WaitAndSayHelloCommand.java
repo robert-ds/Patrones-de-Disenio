@@ -11,7 +11,7 @@ import java.io.OutputStream;
 
 public class WaitAndSayHelloCommand extends AsyncCommand{
 
-  public static final String COMMAND_NAME = "waithello";
+  public static final String COMMAN_NAME = "waithello";
 
   @Override
   public String executeOnBackground(String[] args, OutputStream out) {
@@ -42,6 +42,6 @@ public class WaitAndSayHelloCommand extends AsyncCommand{
 
   @Override
   public String getCommandName() {
-    return COMMAND_NAME;
+    return COMMAN_NAME;
   }
 }

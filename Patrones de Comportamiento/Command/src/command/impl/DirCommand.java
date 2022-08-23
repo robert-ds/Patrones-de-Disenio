@@ -12,18 +12,18 @@ import java.io.OutputStream;
 
 public class DirCommand extends BaseCommand{
 
-  public static final String COMMAND_NAME = "dir";
+  public static final String COMMAN_NAME = "dir";
 
   @Override
   public String getCommandName() {
-    return COMMAND_NAME;
+    return COMMAN_NAME;
   }
 
   @Override
   public String execute(String[] args, OutputStream out) {
 
     if(args == null || args.length < 2){
-      write(out, COMMAND_NAME + " Argumentos insuficientes");
+      write(out, COMMAN_NAME + " Argumentos insuficientes");
     }
 
     String operation = args[0];

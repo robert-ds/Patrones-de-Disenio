@@ -18,11 +18,11 @@ import java.util.Arrays;
 
 public class BatchCommand extends BaseCommand {
 
-  public static final String COMMAND_NAME = "batch";
+  public static final String COMMAN_NAME = "batch";
 
   @Override
   public String getCommandName() {
-    return COMMAND_NAME;
+    return COMMAN_NAME;
   }
 
   @Override
@@ -39,7 +39,7 @@ public class BatchCommand extends BaseCommand {
     for(String line: lines){
       String[] argsCommand = CommandUtil.tokenizerArgs(line);
       ICommand command = manager.getCommand(argsCommand[0]);
-      String[] reduce = Arrays.copyOfRange(argsCommand, argsCommand.length);
+      String[] reduce = Arrays.copyOfRange(argsCommand, 1, argsCommand.length);
       command.execute(reduce,out);
       write(out, "\n");
     }
