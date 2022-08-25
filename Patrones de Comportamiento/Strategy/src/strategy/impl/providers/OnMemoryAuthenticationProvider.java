@@ -24,5 +24,5 @@ public class OnMemoryAuthenticationProvider implements IAuthenticationStrategy {
 
     return null;
   }
-  
+
 }
