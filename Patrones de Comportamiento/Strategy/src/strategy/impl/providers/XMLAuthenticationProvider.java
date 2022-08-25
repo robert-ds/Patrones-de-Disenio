@@ -18,7 +18,7 @@ import java.io.InputStream;
 
 public class XMLAuthenticationProvider implements IAuthenticationStrategy {
 
-  private static final String rolPath = "Users/User[@userName='%s' and @password='%s']/@rol";
+  private static final String rolXPath = "Users/User[@userName='%s' and @password='%s']/@rol";
 
   @Override
   public Principal authenticate(String userName, String password) {
@@ -33,7 +33,7 @@ public class XMLAuthenticationProvider implements IAuthenticationStrategy {
       Document xmlDocument = builder.parse(file);
       XPath xPath = XPathFactory.newInstance().newXPath();
 
-      String xpath = String.format(rolXPath,userName,passwrd);
+      String xpath = String.format(rolXPath,userName,password);
       String rol = xPath.compile(xpath).evaluate(xmlDocument);
 
       if(rol != null && !rol.isEmpty()){

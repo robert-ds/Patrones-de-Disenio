@@ -44,7 +44,7 @@ public class MySQLDBAdapter {
 
   private String createConnectionString(){
 
-    Properties prop = Properties.loadProperty(DB_PROPERTIES);
+    Properties prop = PropertiesUtil.loadProperty(DB_PROPERTIES);
     String host = prop.getProperty(DB_HOST_PROP);
     String port = prop.getProperty(DB_PORT_PROP);
     String db = prop.getProperty(DB_NAME_PROP);

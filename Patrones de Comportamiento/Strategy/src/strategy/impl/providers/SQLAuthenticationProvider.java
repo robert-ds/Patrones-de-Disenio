@@ -30,7 +30,7 @@ public class SQLAuthenticationProvider implements IAuthenticationStrategy {
     try{
       Connection connection = mysqlIAdapter.getConnection();
       Statement statement = connection.createStatement();
-      String queryUser = String.format(USER_QUERY,user,passwrd);
+      String queryUser = String.format(USER_QUERY,userName,password);
       ResultSet query = statement.executeQuery(queryUser);
 
       while(query.next()){
