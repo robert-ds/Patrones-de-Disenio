@@ -7,5 +7,6 @@ package chainofresponsability.domain;
  * Time: 3:37 p. m.
  */
 
-public class Status {
+public enum Status {
+  ACTIVO,BAJA
 }
