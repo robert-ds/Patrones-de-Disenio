@@ -7,5 +7,10 @@ package chainofresponsability.validator;
  * Time: 3:47 p. m.
  */
 
-public class ValidationException extends Throwable {
+public class ValidationException extends Exception {
+
+  public ValidationException(String message) throws ValidationException{
+    super(message);
+  }
+
 }
