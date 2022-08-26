@@ -14,7 +14,7 @@ public class AddressValidator extends AbstractOrderValidator{
   @Override
   public void validate(AbstractOrder order) throws ValidationException {
     Address address = order.getContributor().getAddress();
-    
+
     if(address.getAddress1() == null || address.getAddress1().length() == 0){
       throw new ValidationException("La dirección 1 es obligatoria");
     }else if(address.getCP() == null || address.getCP().length() != 4){
