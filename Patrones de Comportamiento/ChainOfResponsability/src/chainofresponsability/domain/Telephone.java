@@ -8,4 +8,35 @@ package chainofresponsability.domain;
  */
 
 public class Telephone {
+  private String lada;
+  private String number;
+  private String ext;
+
+  // Getters and Setters
+
+  public String getLada(){
+    return this.lada;
+  }
+
+  public void setLada(String lada){
+    this.lada = lada;
+  }
+
+  public String getNumber(){
+    return this.number;
+  }
+
+  public void setNumber(String number){
+    this.number = number;
+  }
+
+  public String getExt(){
+    return this.ext;
+  }
+
+  public void setExt(String ext){
+    this.ext = ext;
+  }
+
+
 }
