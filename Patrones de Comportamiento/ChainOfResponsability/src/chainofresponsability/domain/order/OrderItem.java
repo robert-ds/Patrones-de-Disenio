@@ -17,7 +17,7 @@ public class OrderItem {
 
   // Getters and Setters
 
-  public double price(){
+  public double getPrice(){
     return this.price;
   }
   public void setPrice(double price){
