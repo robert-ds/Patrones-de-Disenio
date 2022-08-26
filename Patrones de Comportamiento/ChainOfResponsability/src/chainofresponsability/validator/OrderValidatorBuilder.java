@@ -19,13 +19,13 @@ public class OrderValidatorBuilder {
 
   private static AbstractOrderValidator buildCustomerValidator(){
     AbstractOrderValidator validator = new CustomerValidator();
-    validator.addValidator(buildContribuitorValidator());
+    validator.addValidator(buildContributorValidator());
     return validator;
   }
 
   private static AbstractOrderValidator buildContributorValidator(){
-    AbstractOrderValidator validator = new ContribuitorValidator();
-    validator.addValidator(AddressValidator());
+    AbstractOrderValidator validator = new ContributorValidator();
+    validator.addValidator(new AddressValidator());
     validator.addValidator(new TelephoneValidator());
     return validator;
   }

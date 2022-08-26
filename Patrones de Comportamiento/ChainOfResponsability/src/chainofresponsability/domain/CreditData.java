@@ -26,7 +26,7 @@ public class CreditData {
     return this.balance;
   }
 
-  public void setBalance(){
+  public void setBalance(double v){
     this.balance = balance;
   }
 

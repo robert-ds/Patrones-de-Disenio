@@ -20,7 +20,7 @@ public class AddressValidator extends AbstractOrderValidator{
     }else if(address.getCP() == null || address.getCP().length() != 4){
       throw new ValidationException("El CP debe de ser de 4 dígitos");
     }else if(address.getCountry() == null || address.getCountry().length() == 0){
-      throw new ValidationException("El paí es obligatorio");;
+      throw new ValidationException("El paí es obligatorio");
     }
   }
 }
