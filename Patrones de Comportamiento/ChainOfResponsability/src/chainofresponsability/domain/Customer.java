@@ -7,5 +7,6 @@ package chainofresponsability.domain;
  * Time: 3:35 p. m.
  */
 
-public class Customer {
+public class Customer extends Contributor {
+  
 }
