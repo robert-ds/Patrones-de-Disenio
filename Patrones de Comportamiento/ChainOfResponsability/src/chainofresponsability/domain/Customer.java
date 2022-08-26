@@ -8,5 +8,5 @@ package chainofresponsability.domain;
  */
 
 public class Customer extends Contributor {
-  
+
 }

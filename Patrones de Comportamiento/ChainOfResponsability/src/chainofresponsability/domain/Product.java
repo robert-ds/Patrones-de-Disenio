@@ -8,4 +8,25 @@ package chainofresponsability.domain;
  */
 
 public class Product {
+  private String name;
+  private double listPrice;
+
+  // Getters and Setters
+
+  public String getName(){
+    return this.name;
+  }
+
+  public void setName(String name){
+    this.name = name;
+  }
+
+  public double getListPrice(){
+    return this.listPrice;
+  }
+
+  public void setListPrice(double listPrice){
+    this.listPrice = listPrice;
+  }
+
 }
