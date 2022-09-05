@@ -28,5 +28,5 @@ public class LiteralExpression implements AbstractSQLExpression {
   public String toString() {
     return literal;
   }
-  
+
 }
