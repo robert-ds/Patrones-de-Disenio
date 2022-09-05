@@ -7,6 +7,8 @@ package interprete.sql;
  * Time: 2:55 p. m.
  */
 
-public class AbstractSQLExpression {
+public interface AbstractSQLExpression {
+
+  public Object interpret(Context context) throws InterpreteException;
 
 }
