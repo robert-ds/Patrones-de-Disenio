@@ -27,7 +27,7 @@ public class TargetExpression implements AbstractSQLExpression {
   }
 
   @Override
-  public void interpret(Context context) throws InterpreteException {
+  public Object interpret(Context context) throws InterpreteException {
     context.createResultArray(targets.size());
 
     List<Row> resultRow = context.getResultRow();
