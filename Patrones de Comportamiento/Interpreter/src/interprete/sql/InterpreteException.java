@@ -7,5 +7,10 @@ package interprete.sql;
  * Time: 2:56 p. m.
  */
 
-public class InterpreteException {
+public class InterpreteException extends Exception {
+
+  public InterpreteException(String message){
+    super(message);
+  }
+
 }
