@@ -1,3 +1,4 @@
 .idea/
 Patrones Creacionales/AbstractFactory/out/
 Patrones Creacionales/FactoryMethod/out/
+Patrones de Comportamiento/Interpreter/src/lib/*
