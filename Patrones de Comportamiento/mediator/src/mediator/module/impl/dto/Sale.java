@@ -1,5 +1,8 @@
 package mediator.module.impl.dto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA
  * Created By Robert Vásquez
@@ -8,4 +11,19 @@ package mediator.module.impl.dto;
  */
 
 public class Sale {
+
+  protected List<Product> productos = new ArrayList<>();
+
+  public List<Product> getProductos(){
+    return this.productos;
+  }
+
+  public void addProduct(Product product){
+    this.productos.add(product);
+  }
+
+  public void setProductos(List<Product> productos){
+    this.productos = productos;
+  }
+
 }
