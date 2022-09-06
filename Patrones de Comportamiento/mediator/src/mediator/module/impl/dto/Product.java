@@ -8,4 +8,21 @@ package mediator.module.impl.dto;
  */
 
 public class Product {
+
+  private String name;
+
+  public Product(String name){
+    this.name = name;
+  }
+
+  // Getters and Setters
+
+  public String getName(){
+    return this.name;
+  }
+
+  public void setName(String name){
+    this.name = name;
+  }
+
 }
