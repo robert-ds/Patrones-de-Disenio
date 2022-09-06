@@ -35,7 +35,7 @@ public class StockModule extends AbstractModule {
     }
   }
 
-  private void decrementStock(ModuleMessage message){
+  private Void decrementStock(ModuleMessage message){
     SaleOrder saleOrder = (SaleOrder) message.getPayLoad();
 
     for(Product product: saleOrder.getProductos()){
