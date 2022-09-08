@@ -62,6 +62,6 @@ public class Employee {
       return Address.NULL_ADDRESS;
     }
 
-  }
+  };
 
 }
